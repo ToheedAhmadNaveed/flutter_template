@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mvvm_clone/data/response/status.dart';
-import 'package:mvvm_clone/screen_models/controller/home/home_view_model.dart';
+import 'package:kindura_ai/data/response/status.dart';
+import 'package:kindura_ai/screens/home_screen/home_controller.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -27,19 +27,19 @@ class _HomeState extends State<Home> {
         title: Text("Home"),
       ),
       body: Obx(() {
-        switch (homeController.request_status.value) {
+        switch (homeController.requestStatus.value) {
           case Status.LOADING:
             return Center(
               child: CircularProgressIndicator(),
             );
           case Status.COMPLETED:
             return ListView.builder(
-                itemCount: homeController.user_list.value.data!.length,
+                itemCount: homeController.userList.value.data!.length,
                 itemBuilder: (context, index) {
                   return Card(
                     child: ListTile(
                       title: Text(homeController
-                          .user_list.value.data![index].email
+                          .userList.value.data![index].email
                           .toString()),
                     ),
                   );

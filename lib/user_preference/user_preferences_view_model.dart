@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:mvvm_clone/models/login/user_model.dart';
+import 'package:kindura_ai/models/login/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserPreferences extends GetxController {

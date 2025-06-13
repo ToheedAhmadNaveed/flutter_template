@@ -1,4 +1,4 @@
-# mvvm_clone
+# kindura_ai
 
 A new Flutter project.
 

@@ -3,11 +3,10 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:get/get.dart';
-import 'package:mvvm_clone/data/response/status.dart';
-import 'package:mvvm_clone/res/colors/app_color.dart';
-import 'package:mvvm_clone/res/routes/routes_name.dart';
-import 'package:mvvm_clone/utils/utils.dart';
-import 'package:mvvm_clone/screen_models/controller/login/login_screen_model.dart';
+import 'package:kindura_ai/data/response/status.dart';
+import 'package:kindura_ai/res/colors/app_color.dart';
+import 'package:kindura_ai/utils/utils.dart';
+import 'package:kindura_ai/screens/login_screen/login_controller.dart';
 
 import '../../res/assets/image_constant.dart';
 
@@ -111,16 +110,16 @@ class _Login_ScreenState extends State<Login_Screen> {
                                           style: TextStyle(
                                               color: AppColor.whiteA700),
                                           controller: login_controller
-                                              .email_controller.value,
+                                              .emailController.value,
                                           focusNode: login_controller
-                                              .email_focus_node.value,
+                                              .emailFocusNode.value,
                                           onFieldSubmitted: (value) {
                                             Util.fieldFocusChange(
                                                 context,
                                                 login_controller
-                                                    .email_focus_node.value,
+                                                    .emailFocusNode.value,
                                                 login_controller
-                                                    .password_focus_node.value);
+                                                    .passwordFocusNode.value);
                                           },
                                           decoration: InputDecoration(
                                             contentPadding:
@@ -161,16 +160,16 @@ class _Login_ScreenState extends State<Login_Screen> {
                                           style: TextStyle(
                                               color: AppColor.whiteA700),
                                           controller: login_controller
-                                              .password_controller.value,
+                                              .passwordController.value,
                                           focusNode: login_controller
-                                              .password_focus_node.value,
+                                              .passwordFocusNode.value,
                                           onFieldSubmitted: (value) {
                                             Util.fieldFocusChange(
                                                 context,
                                                 login_controller
-                                                    .password_focus_node.value,
+                                                    .passwordFocusNode.value,
                                                 login_controller
-                                                    .password_focus_node.value);
+                                                    .passwordFocusNode.value);
                                           },
                                           decoration: InputDecoration(
                                             contentPadding:
@@ -251,7 +250,7 @@ class _Login_ScreenState extends State<Login_Screen> {
               ],
             ),
             Obx(() {
-              switch (login_controller.request_status.value) {
+              switch (login_controller.requestStatus.value) {
                 case Status.LOADING:
                   return Container();
                 case Status.COMPLETED:

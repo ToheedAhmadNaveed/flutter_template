@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:mvvm_clone/data/app_exceptions.dart';
-import 'package:mvvm_clone/utils/utils.dart';
-import 'package:mvvm_clone/screen_models/services/splash_services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:kindura_ai/screens/splash_screen/splash_controller.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -25,7 +22,10 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Text("Kindura AI", style: TextStyle(fontSize: 25.sp)),
+      ),
     );
   }
 }

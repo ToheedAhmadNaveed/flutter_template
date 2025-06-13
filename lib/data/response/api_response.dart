@@ -1,4 +1,4 @@
-import 'package:mvvm_clone/data/response/status.dart';
+import 'package:kindura_ai/data/response/status.dart';
 
 class ApiResponse<T> {
   Status? status;

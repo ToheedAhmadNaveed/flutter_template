@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:mvvm_clone/res/colors/app_color.dart';
-import 'package:mvvm_clone/res/routes/routes.dart';
-import 'package:mvvm_clone/screens/splash_screen.dart';
+import 'package:kindura_ai/res/colors/app_color.dart';
+import 'package:kindura_ai/res/routes/routes.dart';
+import 'package:kindura_ai/screens/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());

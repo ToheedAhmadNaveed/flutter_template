@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
-import 'package:mvvm_clone/data/app_exceptions.dart';
-import 'package:mvvm_clone/data/network/base_api_services.dart';
+import 'package:kindura_ai/data/app_exceptions.dart';
+import 'package:kindura_ai/data/network/base_api_services.dart';
 import 'package:http/http.dart' as http;
 
 class NetworkApiServices extends BaseApiServices {

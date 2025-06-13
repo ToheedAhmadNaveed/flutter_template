@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mvvm_clone">
+    package="com.example.kindura_ai">
    <application
-        android:label="mvvm_clone"
+        android:label="kindura_ai"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

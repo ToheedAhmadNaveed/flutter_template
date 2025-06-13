@@ -1,8 +1,8 @@
 import 'package:get/route_manager.dart';
-import 'package:mvvm_clone/res/routes/routes_name.dart';
-import 'package:mvvm_clone/screens/home_screen/home_screen.dart';
-import 'package:mvvm_clone/screens/login_screen/login_screen.dart';
-import 'package:mvvm_clone/screens/splash_screen.dart';
+import 'package:kindura_ai/res/routes/routes_name.dart';
+import 'package:kindura_ai/screens/home_screen/home_screen.dart';
+import 'package:kindura_ai/screens/login_screen/login_screen.dart';
+import 'package:kindura_ai/screens/splash_screen/splash_screen.dart';
 
 class AppRoutes {
   static appRoutes() => [
